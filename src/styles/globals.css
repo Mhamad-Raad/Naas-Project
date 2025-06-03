@@ -14,7 +14,7 @@
 
 body {
   background-color: var(--color-background);
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-poppins);
 }
 
 button,

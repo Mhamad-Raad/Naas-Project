@@ -10,7 +10,7 @@ import Logo from '@/assets/Logo.png';
 const Navbar = () => {
   // update it in the future to use Link from 'next/link' for client-side navigation
   return (
-    <nav className='w-full text-white px-12 py-4 flex items-center justify-between'>
+    <nav className='w-full mt-6 px-22 text-white flex items-center justify-between'>
       <div className='flex items-center space-x-2'>
         <Image src={Logo} alt='Logo' width={135} height={40} />
       </div>
