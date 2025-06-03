@@ -4,7 +4,7 @@ import BG from '@/assets/About/BG.png';
 
 const AboutUs = () => {
   return (
-    <section className='h-[626px] mb-[500px] flex items-center justify-center relative'>
+    <section className='h-[626px] flex items-center justify-center relative'>
       <Image
         alt='About Us Background'
         src={BG}
