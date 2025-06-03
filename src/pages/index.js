@@ -1,27 +1,10 @@
-import Navbar from '@/Components/Layout/Navbar';
+import Hero from '@/Components/Sections/Hero';
 
-export const metadata = {
-  title: 'Naas Project',
-  description: 'A Next.js project',
-};
-
-import { Poppins } from 'next/font/google';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
-  display: 'swap',
-});
-
-export default function RootLayout({ children }) {
+export default function Home() {
   return (
-    <html lang='en' className={poppins.variable}>
-      <body className='w-full flex flex-col text-white'>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <main className='flex flex-col text-white '>
+      <Hero />
+    </main>
   );
 }
 

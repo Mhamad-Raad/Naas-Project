@@ -8,6 +8,7 @@ import JoinUsButton from '../UI/JoinUsButton';
 import Logo from '@/assets/Logo.png';
 
 const Navbar = () => {
+  // update it in the future to use Link from 'next/link' for client-side navigation
   return (
     <nav className='w-full text-white px-12 py-4 flex items-center justify-between'>
       <div className='flex items-center space-x-2'>
