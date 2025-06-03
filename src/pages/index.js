@@ -1,3 +1,5 @@
+import Navbar from '@/Components/Layout/Navbar';
+
 export const metadata = {
   title: 'Naas Project',
   description: 'A Next.js project',
@@ -15,7 +17,10 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={poppins.variable}>
-      <body>{children}</body>
+      <body className='w-full flex flex-col text-white'>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
