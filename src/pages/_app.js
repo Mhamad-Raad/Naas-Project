@@ -3,6 +3,7 @@ import '@/styles/globals.css';
 import { Poppins } from 'next/font/google';
 
 import Navbar from '@/Components/Layout/Navbar';
+import Footer from '@/Components/Layout/Footer';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -14,8 +15,8 @@ export default function MyApp({ Component, pageProps }) {
     <div className={poppins.className}>
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </div>
   );
 }
-
 
