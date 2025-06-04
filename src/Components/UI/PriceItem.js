@@ -57,7 +57,7 @@ const PriceItem = ({
             transition={{ duration: 0.3 }}
             className='px-6 pb-6'
           >
-            <p className='mb-4 text-sm text-white/80'>{description}</p>
+            <p className='mb-4 text-sm text-left text-white/80'>{description}</p>
             <div className='flex items-center justify-between'>
               <span className='text-2xl font-bold text-white'>{price}</span>
               {button && (
