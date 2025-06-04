@@ -2,7 +2,7 @@ import PriceListing from '../UI/PricingListing';
 
 const Pricing = () => {
   return (
-    <section className='px-22 flex gap-8 mb-[500px]'>
+    <section className='px-22 flex gap-8'>
       <div className='w-[723px] flex flex-col gap-3'>
         <h2 className='w-[591px] text-[67px] text-white font-bold'>
           Simple pricing for your Business

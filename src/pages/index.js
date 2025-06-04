@@ -5,6 +5,7 @@ import Services from '@/Components/Sections/Services';
 import Philosophy from '@/Components/Sections/Philosophy';
 import News from '@/Components/Sections/News';
 import Pricing from '@/Components/Sections/Prices';
+import Clients from '@/Components/Sections/Clients';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Philosophy />
       <News />
       <Pricing />
+      <Clients />
     </main>
   );
 }
