@@ -30,7 +30,7 @@ const News = () => {
     },
   ];
   return (
-    <section className='w-full px-22 flex flex-col gap-[108px] mb-[500px]'>
+    <section className='w-full px-22 flex flex-col gap-[108px]'>
       <div className='flex justify-between items-center'>
         <h2 className='text-[44px] font font-medium leading-[54px]'>News</h2>
         <button className='w-[167px] h-[55px] text-sm text-white font-medium bg-primary rounded-full'>
