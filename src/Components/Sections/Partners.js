@@ -8,8 +8,8 @@ import NAAS from '@/assets/partners/NAAS.png';
 
 const Partners = () => {
   return (
-    <section className='flex flex-col gap-16 items-center justify-center'>
-      <h2 className='text-5xl text-white leading-[60px] font-medium'>
+    <section className='flex flex-col gap-2 md:gap-16 items-center justify-center'>
+      <h2 className='text-lg md:text-5xl text-white leading-[60px] font-medium'>
         Our Partners
       </h2>
       <div className='overflow-hidden w-full py-6'>
