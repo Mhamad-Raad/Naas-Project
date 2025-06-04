@@ -30,28 +30,30 @@ const News = () => {
     },
   ];
   return (
-    <section className='w-full px-22 flex flex-col gap-[108px]'>
+    <section className='w-full px-3 md:px-22 flex flex-col gap-[108px]'>
       <div className='flex justify-between items-center'>
-        <h2 className='text-[44px] font font-medium leading-[54px]'>News</h2>
-        <button className='w-[167px] h-[55px] text-sm text-white font-medium bg-primary rounded-full'>
+        <h2 className='text-center md:text-left text-[44px] font font-medium leading-[54px]'>
+          News
+        </h2>
+        <button className='hidden md:flex w-[167px] h-[55px] text-sm text-white font-medium bg-primary rounded-full'>
           View all news
         </button>
       </div>
 
-      <div className='flex gap-8'>
+      <div className='flex flex-col md:flex-row gap-8'>
         <div className='flex flex-col gap-8'>
           <Image
             src={Img1}
             alt='News Image 1'
-            className='w-[696px] h-[460px] object-cover rounded-2xl'
+            className='w-full md:w-[696px] h-[226px] md:h-[460px] object-cover rounded-2xl'
           />
-          <div className='w-[696px] flex flex-col gap-4'>
+          <div className='md:w-[696px] flex flex-col gap-4'>
             <NewsButtons />
-            <h3 className='mt-2 text-[32px] text-white font-medium leading-10'>
+            <h3 className='mt-2 text-lg md:text-[32px] text-white font-medium leading-10'>
               We specialize in fostering effective partnerships with supportive
               companies to drive mutual success.
             </h3>
-            <p className='text-lg text-[#646a69] leading-[26px]'>
+            <p className='text-md md:text-lg text-[#646a69] leading-[26px]'>
               We are committed to building effective partnerships with
               supporting companies, contributing to the advancement,
               development, and expansion of the sector through diverse
@@ -59,7 +61,7 @@ const News = () => {
             </p>
           </div>
         </div>
-        <div className='w-[530px] flex flex-col gap-8'>
+        <div className='w-full md:w-[530px] flex flex-col gap-8'>
           {NewsData.map((news) => (
             <NewsCard news={news} key={news.id} />
           ))}

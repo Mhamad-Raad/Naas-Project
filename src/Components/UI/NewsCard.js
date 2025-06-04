@@ -9,10 +9,10 @@ const NewsCard = ({ news }) => {
       <Image
         src={news?.image}
         alt={news?.title}
-        className='w-[221px] h-[246px] object-cover rounded-2xl'
+        className='w-[115px] md:w-[221px] h-[115px] md:h-[246px] object-cover rounded-2xl'
       />
       <div className='flex flex-col gap-6'>
-        <h3 className='text-2xl text-white font-medium leading-10'>
+        <h3 className='text-md md:text-2xl text-white font-medium md:leading-10'>
           {news?.title}
         </h3>
         <NewsButtons />
