@@ -1,5 +1,8 @@
 import PhilosophyData from '../UI/PhilosophyData';
 
+import NetProfitChart from '../charts/NetProfitChart';
+import DonutChart from '../charts/DonutChart';
+
 const Philosophy = () => {
   const PData = [
     {
@@ -55,6 +58,11 @@ const Philosophy = () => {
       </div>
       <div className='mt-[86px] flex flex-col gap-[25px]'>
         <h3 className='text-2xl font-semibold'>Our charts</h3>
+
+        <div className='flex gap-[48px]'>
+          <NetProfitChart />
+          <DonutChart />
+        </div>
       </div>
     </section>
   );
