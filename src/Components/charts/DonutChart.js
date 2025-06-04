@@ -18,7 +18,7 @@ const COLORS = ['#A259FF', '#F7931A'];
 
 export default function DonutChart() {
   return (
-    <div className='py-7 rounded-xl w-[355px] bg-[#1e1e1e]'>
+    <div className='py-7 rounded-xl md:w-[355px] bg-[#1e1e1e]'>
       <h2 className='px-4 text-xl font-bold mb-1'>Primary Text</h2>
       <p className='px-4 text-sm text-white/60'>5.987,34</p>
       <p className='px-4 text-xs mb-4 text-gray-400'>Secondary text</p>

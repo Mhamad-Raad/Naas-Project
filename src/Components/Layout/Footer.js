@@ -9,28 +9,28 @@ import SocialMediaButton from '../UI/SocialMediaButtons';
 
 const Footer = () => {
   return (
-    <footer className='bg-primary px-22 pt-[130px] flex flex-col text-white relative overflow-hidden'>
-      <h2 className='text-[46px] font-bold leading-16'>
+    <footer className='bg-primary px-3 md:px-22 pt-[130px] flex flex-col text-white relative overflow-hidden'>
+      <h2 className='text-2xl text-center md:text-left md:text-[46px] font-bold md:leading-16'>
         What are you waiting for?
       </h2>
-      <p className='w-[727px] text-2xl text-[#f8f8f8] font-light leading-[45px]'>
+      <p className='md:w-[727px] text-center md:text-left text-md md:text-2xl text-[#f8f8f8] font-light md:leading-[45px]'>
         Register now to get the best delivery experience for you and your
         clients in Iraq!
       </p>
 
-      <div className='flex items-center gap-3 mt-[73px]'>
+      <div className='flex flex-col md:flex-row items-center gap-3 mt-[73px]'>
         <input
-          type='text'
-          placeholder='Your email'
-          className='w-[349px] h-[56px] px-5 py-4 text-md bg-white rounded-full'
+          placeholder='Your email?'
+          className='w-full md:w-[349px] h-[56px] px-4 md:px-5 md:py-4 text-md bg-white rounded-full text-black placeholder:text-gray-500'
         />
-        <button className='w-[157px] h-[56px] bg-[#161616] font-sans font-medium rounded-full'>
+
+        <button className='w-full md:w-[157px] h-[56px] bg-[#161616] font-sans font-medium rounded-full'>
           register now
         </button>
       </div>
 
-      <div className='flex justify-between mt-30'>
-        <div className='flex gap-[67px]'>
+      <div className='flex flex-col md:flex-row justify-between mt-30'>
+        <div className='flex flex-col md:flex-row gap-6 md:gap-[67px]'>
           <Image src={Logo} alt='Logo' className='w-[135px] h-[40px]' />
           <div className='flex gap-8'>
             <div className='flex flex-col items-start gap-6'>
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 mt-10 md:mt-0'>
           <SocialMediaButton Icon={Facebook} label='Facebook' />
           <SocialMediaButton Icon={Instagram} label='Instagram' />
           <SocialMediaButton Icon={LinkedIn} label='LinkedIn' />

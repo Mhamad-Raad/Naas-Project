@@ -1,6 +1,6 @@
 const PhilosophyData = ({ title, description }) => {
   return (
-    <div className='flex flex-col gap-2'>
+    <div className='max-w-[141px] md:w-auto flex flex-col gap-2'>
       <h3 className='text-5xl text-white font-semibold leading-[60px]'>
         {title}
       </h3>
