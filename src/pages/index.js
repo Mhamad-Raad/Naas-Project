@@ -3,6 +3,7 @@ import Partners from '@/Components/Sections/Partners';
 import AboutUs from '@/Components/Sections/About';
 import Services from '@/Components/Sections/Services';
 import Philosophy from '@/Components/Sections/Philosophy';
+import News from '@/Components/Sections/News';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutUs />
       <Services />
       <Philosophy />
+      <News />
     </main>
   );
 }
