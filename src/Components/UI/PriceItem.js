@@ -20,7 +20,7 @@ const PriceItem = ({
     <button
       type='button'
       onClick={onClick}
-      className={`w-[480px] rounded-xl overflow-hidden relative transition-all duration-300 ${
+      className={`md:w-[480px] rounded-xl overflow-hidden relative transition-all duration-300 ${
         active ? 'bg-primary text-white' : 'bg-[#1a1a1a] text-primary'
       }`}
     >
