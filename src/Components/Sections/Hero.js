@@ -24,10 +24,10 @@ const Hero = () => {
           </span>
         </h1>
         <p className='text-md text-[#d9d9d9] text-center md:text-left'>
-          Welcome to Focus Marketing Solutions! We're a creative team dedicated
-          to driving your business forward with innovative marketing strategies.
-          From digital marketing to social media management, we're here to help
-          you succeed. Let's build something extraordinary together
+          Welcome to Focus Marketing Solutions! We&apos;re a creative team
+          dedicated to driving your business forward with innovative marketing
+          strategies. From digital marketing to social media management, we&apos;re
+          here to help you succeed. Let&apos;s build something extraordinary together
         </p>
         <div className='flex flex-col md:flex-row gap-4'>
           <JoinUsButton className='md:w-[102px] h-[55px]' />

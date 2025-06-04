@@ -16,12 +16,12 @@ const AboutUs = () => {
         </h2>
         <p className='text-center md:text-justify text-md text-[#d9d9d9]'>
           Welcome to{' '}
-          <span className='text-primary'>Focus Marketing Solutions</span>! We're
-          a creative team dedicated to driving your business forward with
-          innovative marketing strategies. From digital marketing to social
-          media management, we're here to help you succeed.{' '}
+          <span className='text-primary'>Focus Marketing Solutions</span>!
+          We&apos;re a creative team dedicated to driving your business forward
+          with innovative marketing strategies. From digital marketing to social
+          media management, we&apos;re here to help you succeed.{' '}
           <span className='text-primary'>
-            Let's build something extraordinary together.
+            Let&apos;s build something extraordinary together.
           </span>
         </p>
         <button className='w-full md:w-[148px] h-[56px] mt-2 text-[#9350f2] text-lg font-medium bg-transparent border border-[#9350f2] rounded-full hover:bg-purple-700 hover:text-white transition'>

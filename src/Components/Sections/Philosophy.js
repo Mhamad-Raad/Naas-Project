@@ -31,7 +31,7 @@ const Philosophy = () => {
       <div className='w-full pb-4 flex items-center gap-2 border-b brder-[#d9dedd]'>
         <div className='w-2 h-2 bg-[#f2f2f2] rounded-full' />
         <p className='text-sm text-primary leading-5'>
-          The company's philosophy
+          The company&apos;s philosophy
         </p>
       </div>
 
