@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-const Quote = ({ client }) => {
+const QuoteCard = ({ client }) => {
   return (
     <div className='flex flex-col p-[45px] bg-[#161616] rounded-[10px] w-[427px] max-h-[400px]'>
-      <div className='relative'>
+      <div className='relative w-[64px]'>
         <Image
           src={client?.image}
           alt={client?.name}
@@ -11,7 +11,7 @@ const Quote = ({ client }) => {
           height={60}
           className='rounded-full object-cover'
         />
-        <p className='p-2 bg-green-400 rounded-full text-lg text-black absolute top-0 right-0'>
+        <p className='pt-3 w-4 h-4 bg-green-400 rounded-full text-lg text-black absolute top-0 right-0 flex items-center justify-center'>
           "
         </p>
       </div>
@@ -21,4 +21,4 @@ const Quote = ({ client }) => {
   );
 };
 
-export default Quote;
+export default QuoteCard;
