@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
+import { ChevronRight, ChevronLeft } from 'lucide-react';
+
 import ClientCard from './QuoteCard';
 
 import P1 from '@/assets/Clients/P1.png';
@@ -67,7 +69,26 @@ const QuotesList = () => {
   }, [currentIndex]);
 
   return (
-    <div className='flex flex-col items-center w-full'>
+    <div className='flex flex-col items-center w-full relative'>
+      {currentIndex > 0 && (
+        <button
+          onClick={() => setCurrentIndex((prev) => Math.max(prev - 1, 0))}
+          className='absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg'
+        >
+          <ChevronLeft className='w-5 h-5' />
+        </button>
+      )}
+
+      {currentIndex < clients.length - 1 && (
+        <button
+          onClick={() =>
+            setCurrentIndex((prev) => Math.min(prev + 1, clients.length - 1))
+          }
+          className='absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg'
+        >
+          <ChevronRight className='w-5 h-5' />
+        </button>
+      )}
       <div
         ref={containerRef}
         className='flex overflow-x-hidden snap-x snap-mandatory px-6 gap-4 w-full max-w-screen-xl scroll-smooth'
