@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const QuoteCard = ({ client }) => {
   return (
-    <div className='flex flex-col p-[45px] bg-[#161616] rounded-[10px] w-[427px] max-h-[400px]'>
+    <div className='flex flex-col p-[45px] bg-[#161616] rounded-[10px] w-[314px] md:w-[427px] max-h-[400px]'>
       <div className='relative w-[64px]'>
         <Image
           src={client?.image}
@@ -16,7 +16,7 @@ const QuoteCard = ({ client }) => {
         </p>
       </div>
       <p className='text-white font-semibold mt-[10px]'>{client?.name}</p>
-      <p className='text-lg text-white leading-[27px] mt-4'>{client?.quote}</p>
+      <p className='text-sm md:text-lg text-white leading-[27px] mt-4'>{client?.quote}</p>
     </div>
   );
 };

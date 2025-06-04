@@ -73,7 +73,7 @@ const QuotesList = () => {
       {currentIndex > 0 && (
         <button
           onClick={() => setCurrentIndex((prev) => Math.max(prev - 1, 0))}
-          className='absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg'
+          className='absolute left-4 top-full md:top-1/2 -translate-y-1/2 z-10 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg'
         >
           <ChevronLeft className='w-5 h-5' />
         </button>
@@ -84,7 +84,7 @@ const QuotesList = () => {
           onClick={() =>
             setCurrentIndex((prev) => Math.min(prev + 1, clients.length - 1))
           }
-          className='absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg'
+          className='absolute right-4 top-full md:top-1/2 -translate-y-1/2 z-10 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg'
         >
           <ChevronRight className='w-5 h-5' />
         </button>
@@ -99,7 +99,7 @@ const QuotesList = () => {
           <div
             key={i}
             className='shrink-0 snap-center'
-            style={{ width: '427px' }}
+            tyle={{ width: 'min(90vw, 427px)' }}
           >
             <ClientCard client={client} />
           </div>
@@ -108,7 +108,7 @@ const QuotesList = () => {
         <div style={{ width: '50%' }} className='shrink-0' />
       </div>
 
-      <div className='flex gap-2 mt-6'>
+      <div className='hidden md:flex gap-2 mt-6'>
         {clients.map((_, i) => (
           <button
             key={i}
